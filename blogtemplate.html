@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ブログ</title>
+  <link rel="icon" href="hotmilk.ico"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #a0417a;
+      --secondary-color: #f7b8d1;
+      --accent-color: #e7c5da;
+      --background-color: #f6e9f1;
+      --text-color: #262124;
+      --link: #001aff;
+      --font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      font-family: var(--font-family);
+      background-color: var(--background-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      padding: 60px 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    header h1 {
+      font-size: 3.5em;
+      margin: 0;
+      letter-spacing: 2px;
+      font-weight: 600;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: var(--primary-color);
+    }
+
+    .blog-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .blog-item {
+      flex: 1 1 200px;
+      background-color: var(--accent-color);
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      font-size: 1.2em;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .blog-item:hover {
+      transform: scale(1.03);
+    }
+
+    .blog-item a {
+      color: var(--link);
+      text-decoration: none;
+      display: block;
+    }
+
+    .blog-item a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: var(--primary-color);
+      color: #fff;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 1.2em;
+    }
+
+    @media (max-width: 768px) {
+      .blog-list {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header h1 {
+        font-size: 2.8em;
+      }
+
+      section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><!-- Blog Title Here --></h1>
+  </header>
+
+  <section>
+	  <!-- Blog Content Here -->
+  </section>
+
+  <footer>
+    <p>© 2025 ホットミルクボット.</p>
+    <p xmlns:cc="http://creativecommons.org/ns#">
+      This work is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+        CC BY 4.0
+        <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""/>
+        <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""/>
+      </a>
+    </p>
+  </footer>
+</body>
+</html>
